@@ -3,74 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode & Sidebar Toggle</title>
+    <title>Interstellar Movie Review</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Dark Mode & Sidebar Toggle</h1>
+        <h1>Interstellar Movie Review</h1>
     </header>
 
-    <nav>
-        <div class="sidebar-toggle" onclick="toggleSidebar()"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="dark-mode-switch" onclick="toggleDarkMode()">🌙</div>
-    </nav>
-
-    <!-- ... previous HTML content ... -->
-
-<div id="sidebar">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-<!-- ... rest of your HTML content ... -->
+    <section>
+        <h2>Brief Review</h2>
+        <p>
+            Interstellar is a captivating sci-fi epic directed by Christopher Nolan. 
+            The film explores space travel, time dilation, and the human spirit's resilience. 
+            With stunning visuals, a powerful soundtrack, and thought-provoking themes, 
+            Interstellar is a cinematic masterpiece.
+        </p>
+    </section>
 
     <section>
-        <h2>Welcome to our website!</h2>
-        <p>This is a simple web layout with a dark mode switcher and a toggleable sidebar.</p>
-
+        <h2>User Feedback</h2>
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Submit Feedback</button>
         </form>
     </section>
 
     <footer>
-        &copy; 2024 Dark Mode & Sidebar Toggle
+        &copy; 2024 Interstellar Movie Review
     </footer>
-
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-
-        function toggleSidebar() {
-            document.body.classList.toggle('sidebar-open');
-        }
-    </script>
 
 </body>
 </html>
